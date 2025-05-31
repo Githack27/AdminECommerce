@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AdminECommerceSQL", "src\AdminECommerceSQL\AdminECommerceSQL.sqlproj", "{3A841EE1-032E-47C4-B7D7-777E39839F4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminECom_API", "src\AdminECom_API\AdminECom_API.csproj", "{13A41E80-FC90-4641-8783-984C42F869C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{3A841EE1-032E-47C4-B7D7-777E39839F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A841EE1-032E-47C4-B7D7-777E39839F4B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A841EE1-032E-47C4-B7D7-777E39839F4B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{13A41E80-FC90-4641-8783-984C42F869C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A41E80-FC90-4641-8783-984C42F869C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A41E80-FC90-4641-8783-984C42F869C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A41E80-FC90-4641-8783-984C42F869C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
