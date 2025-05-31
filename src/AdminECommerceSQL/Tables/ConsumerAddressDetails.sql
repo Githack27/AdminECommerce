@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[ConsumerAddressDetails]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[Address] NVARCHAR(255) NOT NULL,
+	[City] NVARCHAR(100) NOT NULL,
+	[State] NVARCHAR(100) NOT NULL,
+	[ZipCode] NVARCHAR(20) NOT NULL,
+	[Country] NVARCHAR(100) NOT NULL,
+	[ConsumerId] INT NOT NULL FOREIGN KEY REFERENCES [dbo].[ConsumerDetails](Id) ON DELETE CASCADE,
+)

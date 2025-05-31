@@ -1,0 +1,16 @@
+﻿CREATE TABLE [dbo].[RefundDetails]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[OrderId] INT NOT NULL,
+	[RefundAmount] DECIMAL(18, 2) NOT NULL,
+	[RefundDate] DATETIME NOT NULL DEFAULT GETDATE(),
+	[Reason] NVARCHAR(500) NULL,
+	[CreatedBy] NVARCHAR(100) NOT NULL,
+	[CreatedDate] DATETIME NOT NULL DEFAULT GETDATE(),
+	[PaymentID] INT NOT NULL,
+	[IsClosed] BIT NOT NULL DEFAULT 0,
+	[ClosedDate] DATETIME NULL
+
+	CONSTRAINT FK_RefundDetails_Order FOREIGN KEY (OrderId) REFERENCES Orders(Id),
+	CONSTRAINT FK_RefundDetails_PaymentType FOREIGN KEY (PaymentID) REFERENCES PaymentDetails(Id)
+)

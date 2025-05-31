@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].[DiscountDetails]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[DiscountId] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
+	[ProductId] UNIQUEIDENTIFIER NOT NULL,
+	[DiscountPercentage] DECIMAL(5, 2) NOT NULL,
+	[StartDate] DATETIME NOT NULL,
+	[EndDate] DATETIME NOT NULL,
+	[CreatedAt] DATETIME NOT NULL DEFAULT GETDATE(),
+	[UpdatedAt] DATETIME NOT NULL DEFAULT GETDATE(),
+	[CreatedBy] NVARCHAR(100) NOT NULL
+
+	CONSTRAINT [Fk_ProductIn_Discount] FOREIGN KEY ([ProductId]) REFERENCES [dbo].[ProductDetails]([ProductId])
+)

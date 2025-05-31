@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[ConsumerDetails]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[ConsumerName] NVARCHAR(100) NOT NULL,
+	[Password] NVARCHAR(255) NOT NULL,
+	[Email] NVARCHAR(255) NOT NULL UNIQUE,
+	[PhoneNumber] NVARCHAR(10) NOT NULL UNIQUE,
+	[AddressID] INT NOT NULL,
+	[CreatedAt] DATETIME NOT NULL DEFAULT GETDATE(),
+	[UpdatedAt] DATETIME NOT NULL DEFAULT GETDATE(),
+	[IsActive] BIT NOT NULL DEFAULT 1
+	CONSTRAINT [FK_ConsumerDetails_ConsumerAddressDetails] FOREIGN KEY ([AddressID]) REFERENCES [dbo].[ConsumerAddressDetails](Id) ON DELETE CASCADE
+)
