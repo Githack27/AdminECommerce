@@ -6,4 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="BlazorStrap" Version="5.2.103.250524" />
+    <PackageReference Include="BlazorStrap.V5" Version="5.2.103.250523" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\bootstrap\" />
+  </ItemGroup>
+
 </Project>
