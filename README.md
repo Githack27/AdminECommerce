@@ -62,11 +62,11 @@ Whether you're building a new eCommerce site or managing multiple storefronts, t
 
 ## 🛠️ Technology Stack
 
-- **Frontend:** [Your UI stack here, e.g., React/Angular/Vue]
-- **Backend:** [Node.js/NestJS/Django/etc.]
-- **Database:** [PostgreSQL/MongoDB/MySQL]
-- **Auth:** JWT / OAuth / Role-Based Access Control
-- **Deployment:** Docker / Kubernetes / Vercel / Netlify
+- **Frontend:** Blazor Web App (Interactive Server-Side)
+- **Backend API:** Azure Functions (C# Durable Functions)
+- **Database:** SQL Server (with Entity Framework Core)
+- **Authentication:** ASP.NET Identity / JWT / Role-Based Access
+- **Deployment:** Azure App Service / Azure Functions / Docker (Optional)
 
 ---
 
@@ -76,3 +76,34 @@ Whether you're building a new eCommerce site or managing multiple storefronts, t
 ```bash
 git clone https://github.com/your-username/admin-ecommerce-app.git
 cd admin-ecommerce-app
+```
+
+### 2. Prerequisites
+.NET SDK 8+
+Azure Functions Core Tools
+SQL Server (LocalDB, Docker, or cloud-based)
+
+### 3. Configure the Environment
+Update your appsettings.json (Blazor App) and local.settings.json (Azure Functions) with your SQL Server connection string and other environment variables.
+
+### 4. Run the Application
+Start SQL Server
+Ensure your SQL Server instance is running and accessible.
+Start the application via Visual Studio Community
+In the Solution explorer, set the solution properties to start multiple apps.
+Click on Start
+
+### 💡 Use Cases
+- Launch your own multi-product eCommerce store with zero code
+- Build an eCommerce SaaS platform using this as a base
+- Use as a white-label solution for client-specific eCommerce deployments
+- Integrate with existing marketplaces or POS systems
+
+### 🙌 Contributing
+- Contributions are welcome! Please check the /docs/contributing.md guide before submitting issues or pull requests.
+
+### 📩 Contact
+For feature requests, support, or collaboration inquiries:
+📧 [detqel@gmail.com]
+🌐 [detqel.com]
+
