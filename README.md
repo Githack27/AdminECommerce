@@ -79,19 +79,19 @@ cd admin-ecommerce-app
 ```
 
 ### 2. Prerequisites
-.NET SDK 8+
-Azure Functions Core Tools
-SQL Server (LocalDB, Docker, or cloud-based)
+- .NET SDK 8+
+- Azure Functions Core Tools
+- SQL Server (LocalDB, Docker, or cloud-based)
 
 ### 3. Configure the Environment
-Update your appsettings.json (Blazor App) and local.settings.json (Azure Functions) with your SQL Server connection string and other environment variables.
+- Update your appsettings.json (Blazor App) and local.settings.json (Azure Functions) with your SQL Server connection string and other environment variables.
 
 ### 4. Run the Application
-Start SQL Server
-Ensure your SQL Server instance is running and accessible.
-Start the application via Visual Studio Community
-In the Solution explorer, set the solution properties to start multiple apps.
-Click on Start
+- Start SQL Server
+- Ensure your SQL Server instance is running and accessible.
+- Start the application via Visual Studio Community
+- In the Solution explorer, set the solution properties to start multiple apps.
+- Click on Start
 
 ### 💡 Use Cases
 - Launch your own multi-product eCommerce store with zero code
